@@ -10,7 +10,7 @@ arch:
 startup: application
 boot: auto
 
-image: "ghcr.io/remsky/kokoro-fastapi-cpu:v0.8.0"
+image: "ghcr.io/remsky/kokoro-fastapi-cpu"
 
 ports:
   8880/tcp: 8880
@@ -28,5 +28,3 @@ environment:
 legacy: true
 
 schema: false
-
-stage: stable
