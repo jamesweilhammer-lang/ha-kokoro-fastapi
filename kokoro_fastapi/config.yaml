@@ -1,0 +1,32 @@
+name: "Kokoro FastAPI"
+version: "0.8.0"
+slug: "kokoro_fastapi"
+description: "Kokoro-82M FastAPI text-to-speech server"
+url: "https://github.com/remsky/Kokoro-FastAPI"
+
+arch:
+  - amd64
+
+startup: application
+boot: auto
+
+image: "ghcr.io/remsky/kokoro-fastapi-cpu"
+
+ports:
+  8880/tcp: 8880
+
+ports_description:
+  8880/tcp: "Kokoro FastAPI"
+
+webui: "http://[HOST]:[PORT:8880]/web"
+
+environment:
+  USE_GPU: "false"
+  DEVICE_TYPE: "cpu"
+  API_LOG_LEVEL: "INFO"
+
+legacy: true
+
+schema: false
+
+stage: stable
