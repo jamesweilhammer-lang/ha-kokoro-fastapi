@@ -10,7 +10,7 @@ arch:
 startup: application
 boot: auto
 
-image: "ghcr.io/remsky/kokoro-fastapi-cpu"
+image: "ghcr.io/remsky/kokoro-fastapi-cpu:v0.8.0"
 
 ports:
   8880/tcp: 8880
